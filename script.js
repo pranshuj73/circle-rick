@@ -43,10 +43,9 @@ box.onclick = function () {
     canvas.height = 50;
     var context = canvas.getContext("2d");
     setInterval(function () { rickRoll(canvas, context, 0, 0, img_obj) }, 100);
-    var banner = document.createElement('h3');
-    banner.className = "rainbow rainbow_text_animated";
+    var banner = document.getElementById('banner');
+    banner.classList.add('rainbow_text_animated');
     banner.innerHTML = "RICKROLLED AHAHAHA!";
-    document.body.appendChild(banner);
     box.onclick = null;
     
   }
