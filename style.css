@@ -1,0 +1,56 @@
+html, body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  min-height: 100vh;
+}
+
+.box {
+  min-width: min(600px, 100vh, 100vw);
+  min-height: min(600px, 100vh, 100vw);
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(10px, 1fr));
+}
+
+.circle {
+  background-color: #999;
+  display:inline-block;
+  aspect-ratio : 1 / 1;
+  width:100%;
+  height:auto;
+  margin: 0 auto;
+  border-radius: 50%;
+}
+
+.rainbow {
+  text-align: center;
+  text-decoration: underline;
+  font-size: 28px;
+  font-family: monospace;
+  letter-spacing: 5px;
+  font-weight: 700;
+}
+
+.rainbow_text_animated {
+  background: linear-gradient(to right, #6666ff, #0099ff , #00ff00, #ff3399, #6666ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: rainbow_animation 2s ease-in-out infinite;
+  background-size: 400% 100%;
+}
+
+@keyframes rainbow_animation {
+  0%,100% {
+      background-position: 0 0;
+  }
+
+  50% {
+      background-position: 100% 0;
+  }
+}
