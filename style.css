@@ -9,8 +9,8 @@ html, body {
 }
 
 .box {
-  min-width: min(600px, 100vh, 100vw);
-  min-height: min(600px, 100vh, 100vw);
+  min-width: min(500px, 100vh, 100vw);
+  min-height: min(500px, 100vh, 100vw);
   display: grid;
   justify-content: center;
   align-items: center;
