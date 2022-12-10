@@ -50,9 +50,13 @@ box.onclick = function () {
     var context = canvas.getContext("2d");
     setInterval(function () { rickRoll(canvas, context, 0, 0, img_obj) }, 100);
     
+    // salt to the burn! play the audio!
+    var audio = new Audio('./data/anime_rickroll.webm');
+    audio.play();
+
     var banner = document.getElementById('banner');
     banner.classList.add('rainbow_text_animated');
-    banner.innerHTML = "RICKROLLED AHAHAHA!"; // another message to remind that you've been rickrolled
+    banner.innerHTML = "YOU'VE BEEN RICKROLLED❤️‍🔥"; // another message to remind that you've been rickrolled
     box.onclick = null;
     
   }
